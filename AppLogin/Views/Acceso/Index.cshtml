@@ -1,0 +1,109 @@
+﻿
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/AppLogin.styles.css" asp-append-version="true" />
+
+@model IEnumerable<AppLogin.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+
+
+<div class="row border-dark justify-content-center">
+    
+   <div class="col-sm-8">
+        <p>
+            <a asp-action="Registro" class="btn btn-small btn-primary mt-2 pl-2" style="color:white">Create Nuevo Usuario</a>
+        </p>
+       <div class="card">
+           <div class="card-header bg-success">
+
+               <h2>Usuarios</h2>
+
+           </div>
+
+            <div class="card-body">
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.NombreCompleto)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Correo)
+                            </th>
+                            <th>
+                               Rol
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NombreCompleto)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Correo)
+                                </td>
+                                <td>
+                                    @foreach(var r in item.UsuarioRoles)
+                                    {
+                                       var roluser= r.Rol.Nombre;
+                                    <td><span>@roluser</span></td>
+                                    
+                                    }
+                                
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.IdUsuario">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@item.IdUsuario">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.IdUsuario">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+
+
+            </div>
+       </div>
+
+
+   </div>
+
+
+
+    <div class="card-footer  justify-content-center ">
+
+        <footer class="text-success">derechos reservados 2024</footer>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                <style>
+
+                     footer{
+                     
+                     margin-left:20%
+                     }
+                 
+    
+    
+
+                     
+                </style>

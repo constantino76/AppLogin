@@ -1,0 +1,65 @@
+html {
+    font-size: 14px;
+   /* background-image: url("https://candeias-hotel-gold-fish.centro-oeste-do-brasil-hoteis.com/data/Images/OriginalPhoto/6969/696953/696953445/image-corumba-candeias-hotel-gold-fish-2.JPEG");
+    background-repeat:no-repeat*/
+
+
+}
+
+
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* El sidebar ocupa el ancho completo en pantallas pequeñas */
+        height: auto; /* Altura automática */
+    }
+}
+    /*.flex-grow-1 {
+        margin-left: 20px;*/ /* Ajusta el espacio del contenido principal */
+        /*padding: 20px;
+    }*/
+
+
+
+
+
+    hr {
+        border: none
+    }
+
+   body {
+        position: absolute;
+        min-height: 100%;
+        background-image: url("/img/02.jpg");
+        background-repeat: no-repeat;/* aseguro que no se repita la imagen*/
+       background-size: cover;/* Asegura que la imagen llene el contenedor */
+        background-position: center; /* Centra la imagen en el contenedor */
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /*style by image background  Register  view*/
+
+
+
+    form {
+        width: 100%;
+        height: 100%
+    }
+
+    .card {
+        background-color: wheat;
+        font-size: 16px;
+        opacity: 0.6;
+        border: 4px solid white
+    }
+
+    

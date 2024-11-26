@@ -1,0 +1,98 @@
+﻿@model AppLogin.Models.UsuarioViewModel
+
+
+
+
+@{
+    ViewData["Title"] = "Registro";
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+}
+@{
+
+}
+
+<hr />
+<div class="row justify-content-center pt-4 mt-3  fondo-imagen">
+    <div class="col-sm-6">
+
+        <div class="card">
+            <div class="card-header bg-success text-center text-info">Registro</div>
+
+            <div class="card-body mt-2 bg-dark">
+                <form asp-action="Registro" class="form">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="NombreCompleto" class="control-label text-white">Nombre completo</label>
+                        <input asp-for="NombreCompleto" class="form-control" required="this fiel is required" />
+                        <span asp-validation-for="NombreCompleto" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Correo" class="control-label text-white">Correo</label>
+                        <input asp-for="Correo" class="form-control" required="this field is required" />
+                        <span asp-validation-for="Correo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Clave" class="control-label text-white">Contrasenia</label>
+                        <input type="password" asp-for="Clave" class="form-control" required="this field is required " />
+                        <span asp-validation-for="Clave" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="RepitaClave" class="control-label text-white">Repita la contrasenia</label>
+                        <input type="password" asp-for="RepitaClave" class="form-control" required="this field is required " />
+                        <span asp-validation-for="RepitaClave" class="text-danger"></span>
+                    </div>
+                    <div class="justify-content-center">
+                        <input type="submit" value="Create" class="btn btn-lg btn-primary mt-2" style="flex:" />
+                    </div>
+                </form>
+
+                @{
+                    if (ViewBag.Mensaje != null)
+
+                    {
+                        <div class=" row justify-content-center mt-2 pt-1">
+
+                            <div class="alert alert-success">Usuario registrado</div>
+
+                        </div>
+
+
+                    }
+
+
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
+
+<style>
+
+
+
+    /* .fondo-imagen {
+            background-image: url("/img/01.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100vw; /* Ancho total de la ventana */
+    height: 100vh; /* Alto total de la ventana */
+    display: flex;
+    /* align-items: center; /* Centrar verticalmente */ */
+    /* justify-content: center; /* Centrar horizontalmente */ */
+    padding: 2px; */
+    }
+</style> 

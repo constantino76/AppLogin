@@ -25,6 +25,22 @@
       "PackagePath": "staticwebassets\\img\\02.jpg"
     },
     {
+      "Id": "C:\\CursosWeb\\AppLogin\\AppLogin\\wwwroot\\img\\03.jpg",
+      "PackagePath": "staticwebassets\\img\\03.jpg"
+    },
+    {
+      "Id": "C:\\CursosWeb\\AppLogin\\AppLogin\\wwwroot\\img\\imghotel\\01.jpg",
+      "PackagePath": "staticwebassets\\img\\imghotel\\01.jpg"
+    },
+    {
+      "Id": "C:\\CursosWeb\\AppLogin\\AppLogin\\wwwroot\\img\\imghotel\\02.jpg",
+      "PackagePath": "staticwebassets\\img\\imghotel\\02.jpg"
+    },
+    {
+      "Id": "C:\\CursosWeb\\AppLogin\\AppLogin\\wwwroot\\img\\imghotel\\03.jpg",
+      "PackagePath": "staticwebassets\\img\\imghotel\\03.jpg"
+    },
+    {
       "Id": "C:\\CursosWeb\\AppLogin\\AppLogin\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },

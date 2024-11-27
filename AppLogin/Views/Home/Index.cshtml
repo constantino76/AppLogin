@@ -1,21 +1,54 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
- 
- <div class="row  justify-content-center mt-2 p-2">
-     <div class="col-sm-12">
 
+
+ @* carrusel slides *@
+
+ <body>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/img/imghotel/02.jpg" class="d-block w-100 " alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/img/imghotel/03.jpg" class="d-block w-100 " alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/img/imghotel/01.jpg" class="d-block w-100 " alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+@* end carrusel slide *@
+ <div class="row ">
+
+        <div class="col-md-12 p-1 rounded-1">
+        
 
         <div class="card-outline">
-            <div class="card-header bg-success justify-content-center">
+            <div class="card-header  text-center">
 
-                <img class="" />
+               <h3>Resenia</h3>
                
             </div>
-             <div class="card ">
+            
 
 
-                <div class="card-header bg-info justify-content-center"><h1>Hotel la fortuna</h1></div>
+            
                 <div class="card-body">
 
 
@@ -34,19 +67,15 @@
              </div>
            
         </div>
-
-     </div>
  </div>
 
- <style>
-
-
-    .row{
-    
-    
-     z-index:1000 
-    
-    
+</body>
+<style>
+    .carousel-item img {
+        max-height: 400px; /* Adjust the height as needed */
+        object-fit: cover; /* Ensures the image scales proportionally */
     }
-
- </style>
+    body{
+        background-image: linear-gradient(105deg, #505467 0, #1f3259 50%, #00154b 100%);
+    }
+</style>

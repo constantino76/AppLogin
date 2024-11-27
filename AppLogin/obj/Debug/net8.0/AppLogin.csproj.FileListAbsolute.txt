@@ -282,3 +282,4 @@ C:\CursosWeb\AppLogin\AppLogin\obj\Debug\net8.0\refint\AppLogin.dll
 C:\CursosWeb\AppLogin\AppLogin\obj\Debug\net8.0\AppLogin.pdb
 C:\CursosWeb\AppLogin\AppLogin\obj\Debug\net8.0\AppLogin.genruntimeconfig.cache
 C:\CursosWeb\AppLogin\AppLogin\obj\Debug\net8.0\ref\AppLogin.dll
+C:\CursosWeb\AppLogin\AppLogin\obj\Debug\net8.0\AppLogin.sourcelink.json
